@@ -33,3 +33,6 @@ print(classInstance.status)
 tupleSample = ("free", "shav", "acado")
 classInstance.myTuple(tupleSample)
 print(classInstance.status)
+
+instance = tuple(classInstance.status)
+print(instance)

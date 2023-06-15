@@ -1,11 +1,11 @@
 const user = require("./executingAProgram")
 
 
-console.log( "The sum of ${num1} and ${num2} is ${sum}");
-console.log( "The difference of ${num1} and ${num2} is ${sum}");
-console.log( "The product of ${num1} and ${num2} is ${sum}");
-console.log( "The quotient of ${num1} and ${num2} is ${sum}");
+user1 = new user(2,9, "Tom", 28)
 
-console.log(greeting, "Hello, ${userName} who is ${userAge}, welcome!");
-
-console.log(numbers)
+console.log(user1.sum())
+console.log(user1.subtract())
+console.log(user1.mult())
+console.log(user1.divide())
+console.log(user1.greeting())
+console.log(user1.numbers())
