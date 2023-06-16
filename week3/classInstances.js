@@ -1,7 +1,4 @@
-module.exports = class myClass{
-    constructor(num){
-        this.num = num
-    }
+function myFunction(num){
     if (num % 3 == 0) {
         return ("Good morning")
     }
@@ -14,9 +11,8 @@ module.exports = class myClass{
     if (num % 3 != 0 && num % 7 != 0){
         return `"${num}"` 
     }
-    error ("Not a number!")
+    error("Not a number!")
 }
-
 
 
 module.exports = myFunction
