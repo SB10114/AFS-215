@@ -1,18 +1,23 @@
-function myFunction(num){
-    if (num % 3 == 0) {
+class myFunction {
+    constructor(num){
+    this.num = num
+    }
+
+    greeting(){
+        
+    if (this.num % 3 == 0) {
         return ("Good morning")
     }
-    if (num % 7 == 0){
+    if (this.num % 7 == 0){
         return ("Good afternoon")
     }
-    if (num % 3 == 0 && num % 7 == 0){
+    if (this.num % 3 == 0 && this.num % 7 == 0){
         return ("Good evening")
     }
-    if (num % 3 != 0 && num % 7 != 0){
-        return `"${num}"` 
+    if (typeof this.num == "number" ){
+        return `"${String(this.num)}"` 
     }
-    error("Not a number!")
+    return "This is not a number"
 }
-
-
+}
 module.exports = myFunction
