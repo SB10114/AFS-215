@@ -1,7 +1,7 @@
-class todoList:
+class todoList: 
     def __init__(self):
         self.list = []
-
+    
     def addList(self, item):
         self.list.append(item)
 
@@ -12,7 +12,7 @@ class todoList:
         self.list.remove()
 
     def removedLast(self):
-        self.list.pop(len(self.list - 1))
+        self.list.pop(len(self.list -1))
 
     def specific(self, item):
         index = self.list.index(item)
