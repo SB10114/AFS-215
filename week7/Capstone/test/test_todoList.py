@@ -2,7 +2,7 @@ import pytest
 
 
 @pytest.fixture 
-def test_addList():
+def testaddList():
     x = todoList()
     assert x.addList(23) == [23]
 
