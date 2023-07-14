@@ -1,6 +1,6 @@
 module.exports = class SuppliesList {
     constructor() {
-        this.list - []
+        this.list = []
     }
 
 
@@ -9,8 +9,8 @@ module.exports = class SuppliesList {
     }
 
     removeFromList = (item) => {
-        let thing = this.list.indexOf(item)
-        if (thing >= -1)
+        let index = this.list.indexOf(item)
+        if (index >= -1)
             this.list.splice(index, 1)
     }
 

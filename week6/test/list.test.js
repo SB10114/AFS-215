@@ -26,12 +26,12 @@ it("find item", () => {
 })
 
 it("remove from list", () => {
-    list.removeFromList("Chalk pen")
-    expect(list.getList()).to.deep.equal({"Slag hammer"})
+    list.removeFromList("Metal")
+    expect(list.getList()).to.deep.equal(["Machine", "Leads", "Wire", "Electricity"])
 })
 
 it("add to list", () => {
-    expect(list.getList()).to.deep.equal(["Slag hammer", "Wire brush", "Chalk pen"])
+    expect(list.getList()).to.deep.equal(["Machine", "Leads","Metal", "Wire", "Electricity"])
 })
 
 
